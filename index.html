@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>กก.6 บก.กฟ.บช.ตชด. ค่ายรามคำแหงมหาราช | กองบัญชาการตำรวจตระเวนชายแดน</title>
+    <!-- Google Fonts: Sarabun & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Bar for official notices / emergency hotline -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <span class="emergency-alert"><i class="fa-solid fa-circle-exclamation blink"></i> ติดต่อประสานงาน กก.6 บก.กฟ.บช.ตชด. (ค่ายรามคำแหงมหาราช) โทร <strong>02-123-4567</strong></span>
+            <div class="top-links">
+                <a href="#contact" onclick="switchTab('contact')"><i class="fa-solid fa-location-dot"></i> แผนที่ กก.6</a>
+                <span class="separator">|</span>
+                <a href="https://specialtraining.bpp.police.go.th/" target="_blank"><i class="fa-solid fa-graduation-cap"></i> กองบังคับการฝึกพิเศษ</a>
+                <span class="separator">|</span>
+                <a href="http://www.bpp.go.th" target="_blank"><i class="fa-solid fa-building-columns"></i> กองบัญชาการตำรวจตระเวนชายแดน</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo-area" onclick="switchTab('home')">
+                <img src="assets/logo.png" alt="ตรา กก.6 บก.กฟ.บช.ตชด. ค่ายรามคำแหงมหาราช" class="police-logo">
+                <div class="logo-text">
+                    <span class="thai-name">กก.6 บก.กฟ.บช.ตชด.</span>
+                    <span class="eng-name">ค่ายรามคำแหงมหาราช</span>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="เปิดเมนู">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active" onclick="switchTab('home')"><i class="fa-solid fa-house"></i> หน้าแรก</a>
+                <a href="https://www.facebook.com/Bpptr6" target="_blank" class="nav-link"><i class="fa-brands fa-facebook"></i> ข่าวประชาสัมพันธ์</a>
+                <a href="#commanders" class="nav-link" onclick="switchTab('commanders')"><i class="fa-solid fa-users-gear"></i> ผู้บังคับบัญชา</a>
+                <a href="#contact" class="nav-link" onclick="switchTab('contact')"><i class="fa-solid fa-envelope"></i> ติดต่อเรา</a>
+                <a href="tel:021234567" class="btn-emergency-call"><i class="fa-solid fa-phone"></i> โทรติดต่อ กก.6</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Container (SPA Sections) -->
+    <main>
+        <!-- 1. Home Section -->
+        <section id="home" class="tab-content active">
+            <!-- Royal Mourning Banner -->
+            <div class="mourning-banner-container">
+                <div class="container">
+                    <img src="assets/mourning.png" alt="กราบน้อมส่งเสด็จสู่สวรรคาลัย" class="mourning-banner-img">
+                </div>
+            </div>
+
+
+            <!-- Facebook Page Feed Section -->
+            <section class="section-padding facebook-feed-section" style="background-color: var(--bg-white);">
+                <div class="container" style="max-width: 800px; text-align: center;">
+                    <div class="section-header">
+                        <span class="section-tagline">Official Facebook Feed</span>
+                        <h2 class="section-title">ข่าวสารและกิจกรรมทาง Facebook</h2>
+                        <div class="title-line"></div>
+                        <p class="section-desc">ติดตามความเคลื่อนไหว กิจกรรมการฝึกอบรม และข่าวประชาสัมพันธ์ล่าสุดจากเพจ กก.6 บก.กฟ.บช.ตชด. ส่งตรงจาก Facebook</p>
+                    </div>
+                    
+                    <div class="facebook-iframe-container" style="display: flex; justify-content: center; align-items: center; width: 100%; margin: 0 auto;">
+                        <div class="facebook-iframe-wrapper" style="width: 500px; max-width: 100%; box-shadow: var(--shadow-lg); border-radius: var(--border-radius-lg); overflow: hidden; border: 1.5px solid var(--border-color); background-color: #ffffff;">
+                            <iframe 
+                                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FBpptr6&tabs=timeline&width=500&height=800&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
+                                width="500" 
+                                height="800" 
+                                style="border:none; overflow:hidden; display: block; width: 100%; height: 800px;" 
+                                scrolling="no" 
+                                frameborder="0" 
+                                allowfullscreen="true" 
+                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                            </iframe>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 30px;">
+                        <a href="https://www.facebook.com/Bpptr6" target="_blank" class="btn btn-primary" style="background-color: #1877F2; border-color: #1877F2; color: #ffffff; font-weight: 700; border-radius: 50px; padding: 12px 30px; text-decoration: none;">
+                            <i class="fa-brands fa-facebook"></i> เปิดดูข่าวสารเพิ่มเติมบน Facebook
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Department Mission & Stats -->
+            <section class="stats-section section-padding">
+                <div class="container">
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="15">0</div>
+                            <div class="stat-unit">หลักสูตร</div>
+                            <p class="stat-label">หลักสูตรการฝึกมาตรฐานระดับประเทศ</p>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="2500">0</div>
+                            <div class="stat-unit">นาย/ปี</div>
+                            <p class="stat-label">จำนวนผู้ผ่านการฝึกอบรมสะสมต่อปี</p>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="50">0</div>
+                            <div class="stat-unit">ปี</div>
+                            <p class="stat-label">ประสบการณ์ก่อตั้งและบริหารศูนย์ฝึกอบรม</p>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="99">0</div>
+                            <div class="stat-unit">%</div>
+                            <p class="stat-label">คะแนนประเมินมาตรฐานครูฝึกและหลักสูตร</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Emergency Phone Numbers List (Adjusted to official BPP and general contacts) -->
+            <section class="emergency-numbers-section section-padding">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-tagline">Contacts</span>
+                        <h2 class="section-title">เบอร์โทรศัพท์ติดต่อและหน่วยงานในสังกัด</h2>
+                        <div class="title-line"></div>
+                    </div>
+                    <div class="hotline-grid">
+                        <a href="tel:021234567" class="hotline-card">
+                            <div class="hotline-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="hotline-info">
+                                <h4>กก.6 บก.กฟ.บช.ตชด.</h4>
+                                <span class="hotline-number">02-123-4567</span>
+                            </div>
+                        </a>
+                        <a href="tel:191" class="hotline-card">
+                            <div class="hotline-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <div class="hotline-info">
+                                <h4>เหตุด่วนเหตุร้าย (ตำรวจภูธร)</h4>
+                                <span class="hotline-number">191</span>
+                            </div>
+                        </a>
+                        <a href="tel:1669" class="hotline-card">
+                            <div class="hotline-icon"><i class="fa-solid fa-kit-medical"></i></div>
+                            <div class="hotline-info">
+                                <h4>หน่วยกู้ชีพฉุกเฉิน</h4>
+                                <span class="hotline-number">1669</span>
+                            </div>
+                        </a>
+                        <a href="tel:1193" class="hotline-card">
+                            <div class="hotline-icon"><i class="fa-solid fa-road"></i></div>
+                            <div class="hotline-info">
+                                <h4>ตำรวจทางหลวง</h4>
+                                <span class="hotline-number">1193</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+
+        <!-- 3. Commanders Section -->
+        <section id="commanders" class="tab-content section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Leadership</span>
+                    <h2 class="section-title">ทำเนียบผู้บังคับบัญชา</h2>
+                    <div class="title-line"></div>
+                    <p class="section-desc">รายนามผู้บังคับบัญชา กองกำกับการ 6 กองบังคับการฝึกพิเศษ (กก.6 บก.กฟ.บช.ตชด. ค่ายรามคำแหงมหาราช)</p>
+                </div>
+
+                <!-- Org Structure Visual Representation -->
+                <div class="commanders-structure">
+                    <!-- Rank 1: Superintendent -->
+                    <div class="rank-level level-chief">
+                        <div class="commander-card gold-border">
+                            <div class="commander-img-wrapper">
+                                <img src="assets/commander_1.png" alt="ผู้กำกับการ กองกำกับการ 6" class="commander-img">
+                            </div>
+                            <div class="commander-details">
+                                <span class="rank-badge">ผู้กำกับการ (ผกก.)</span>
+                                <h3 class="commander-name">พ.ต.อ. รักษ์สิทธิ์ ยอดเมือง</h3>
+                                <p class="commander-position">ผู้กำกับการ กองกำกับการ 6 บก.กฟ.บช.ตชด.</p>
+                                <div class="commander-contact-info">
+                                    <span><i class="fa-solid fa-phone"></i> 02-123-4567 ต่อ 101</span>
+                                    <span><i class="fa-solid fa-envelope"></i> superintendent@bppsub6.go.th</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Connective line -->
+                    <div class="org-line"></div>
+
+                    <!-- Rank 2: Deputies -->
+                    <div class="rank-level level-deputies">
+                        <!-- Deputy 1 -->
+                        <div class="commander-card">
+                            <div class="commander-img-wrapper">
+                                <img src="assets/commander_2.png" alt="รอง ผกก. กก.6" class="commander-img">
+                            </div>
+                            <div class="commander-details">
+                                <span class="rank-badge">รองผู้กำกับการ (ฝ่ายฝึก)</span>
+                                <h3 class="commander-name">พ.ต.ท. คมสันต์ ปราบอริ</h3>
+                                <p class="commander-position">รองผู้กำกับการ กองกำกับการ 6 บก.กฟ.บช.ตชด.</p>
+                                <div class="commander-contact-info">
+                                    <span><i class="fa-solid fa-phone"></i> 02-123-4567 ต่อ 102</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Deputy 2 -->
+                        <div class="commander-card">
+                            <div class="commander-img-wrapper">
+                                <img src="assets/commander_3.png" alt="รอง ผกก. กก.6" class="commander-img">
+                            </div>
+                            <div class="commander-details">
+                                <span class="rank-badge">รองผู้กำกับการ (ฝ่ายบริหาร)</span>
+                                <h3 class="commander-name">พ.ต.ท. หญิง วรรณวิสาข์ ใจดี</h3>
+                                <p class="commander-position">รองผู้กำกับการ กองกำกับการ 6 บก.กฟ.บช.ตชด.</p>
+                                <div class="commander-contact-info">
+                                    <span><i class="fa-solid fa-phone"></i> 02-123-4567 ต่อ 103</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Division Structure List (BPP Focused) -->
+                <div class="division-structure section-padding">
+                    <h3 class="division-title"><i class="fa-solid fa-sitemap"></i> โครงสร้างส่วนราชการภายใน กก.6</h3>
+                    <div class="division-grid">
+                        <div class="division-item">
+                            <div class="division-icon"><i class="fa-solid fa-person-military-pointing"></i></div>
+                            <h4>งานฝึกอบรม (หลักสูตรตำรวจตระเวนชายแดน)</h4>
+                            <p>รับผิดชอบบริหารจัดการ วางแผนหลักสูตรการฝึก ตรวจสอบและประเมินผลการเรียนรู้ของนักเรียนและผู้ฝึกอบรม</p>
+                        </div>
+                        <div class="division-item">
+                            <div class="division-icon"><i class="fa-solid fa-crosshairs"></i></div>
+                            <h4>งานพัฒนาหลักสูตรพิเศษและยุทธวิธี</h4>
+                            <p>ศึกษาวิจัยและถ่ายทอดวิชาการป้องกันและระงับเหตุเฉพาะหน้า ยุทธวิธีพิเศษทางตำรวจและทหาร</p>
+                        </div>
+                        <div class="division-item">
+                            <div class="division-icon"><i class="fa-solid fa-campground"></i></div>
+                            <h4>งานบริการอาคาร สถานที่และยุทโธปกรณ์</h4>
+                            <p>อำนวยความสะดวกด้านที่พัก สนามฝึก อาวุธยุทโธปกรณ์ อุปกรณ์ประกอบการฝึกอบรมทั้งหมด</p>
+                        </div>
+                        <div class="division-item">
+                            <div class="division-icon"><i class="fa-solid fa-folder-open"></i></div>
+                            <h4>งานอำนวยการและสนับสนุนการฝึก</h4>
+                            <p>ดูแลงานเอกสาร งบประมาณสิทธิกำลังพล ระบบไอทีและการประสานความร่วมมือกับภาคเอกชน</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Contact Us Section -->
+        <section id="contact" class="tab-content section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Contact Us</span>
+                    <h2 class="section-title">ช่องทางการติดต่อเรา</h2>
+                    <div class="title-line"></div>
+                    <p class="section-desc">ติดต่อสอบถามข้อมูลการเข้าใช้ศูนย์ฝึก สอบถามเบอร์วิทยากร หรือส่งข้อเสนอแนะถึงผู้บังคับบัญชา</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Facebook Link (Left) -->
+                    <div class="contact-form-container" style="text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 400px; padding: 40px;">
+                        <div class="service-icon" style="font-size: 48px; color: #1877F2; background-color: rgba(24, 119, 242, 0.1); width: 90px; height: 90px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; margin-left: auto; margin-right: auto; transition: var(--transition);">
+                            <i class="fa-brands fa-facebook-messenger"></i>
+                        </div>
+                        <h3 style="font-size: 24px; color: var(--primary); margin-bottom: 15px; display: flex; align-items: center; gap: 10px; justify-content: center;"><i class="fa-solid fa-comments"></i> ส่งข้อความถึงเรา</h3>
+                        <p class="form-desc" style="max-width: 400px; margin-bottom: 30px; line-height: 1.6;">ท่านสามารถติดต่อสอบถามข้อมูล ส่งข้อความขอความช่วยเหลือ หรือส่งข้อเสนอแนะในการฝึกอบรม โดยส่งข้อความตรงถึงแอดมินเพจกองกำกับการ 6 ผ่านทาง Facebook Messenger</p>
+                        <a href="https://m.me/Bpptr6" target="_blank" class="btn btn-primary btn-large" style="background-color: #1877F2; border-color: #1877F2; color: #ffffff; display: inline-flex; width: auto; font-weight: 700; box-shadow: 0 4px 15px rgba(24, 119, 242, 0.3); border-radius: 50px; padding: 14px 35px;">
+                            <i class="fa-brands fa-facebook-messenger" style="font-size: 20px;"></i> ส่งข้อความทาง Messenger
+                        </a>
+                        <p style="font-size: 12px; color: var(--text-muted); margin-top: 20px;"><i class="fa-solid fa-clock"></i> เจ้าหน้าที่แอดมินพร้อมตอบกลับคำถามของท่านโดยเร็วที่สุด</p>
+                    </div>
+
+                    <!-- Contact Details & Map (Right) -->
+                    <div class="contact-details-container">
+                        <!-- Office Details -->
+                        <div class="contact-info-block">
+                            <h3><i class="fa-solid fa-building-user"></i> ข้อมูลกองกำกับการ 6</h3>
+                            <ul class="contact-info-list">
+                                <li>
+                                    <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                    <div class="info-text">
+                                        <strong>ที่ตั้ง:</strong> 
+                                        <span>ค่ายรามคำแหงมหาราช (กฝ.6) ถ.จรดวิถีถ่อง ต.เมืองเก่า อ.เมือง จ.สุโขทัย 64210</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Map -->
+                        <div class="map-container">
+                            <h3><i class="fa-solid fa-map-location-dot"></i> แผนที่การเดินทาง</h3>
+                            <iframe 
+                                title="แผนที่ตั้งกองกำกับการ 6"
+                                src="https://maps.google.com/maps?q=17.0300836,99.6707686&z=15&output=embed" 
+                                width="100%" 
+                                height="250" 
+                                style="border:0; border-radius: 8px;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Area -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <img src="assets/logo.png" alt="ตรา กก.6 บก.กฟ.บช.ตชด. ค่ายรามคำแหงมหาราช" class="footer-logo">
+                <div class="footer-brand-text">
+                    <h4>กก.6 บก.กฟ.บช.ตชด.</h4>
+                    <p><a href="https://specialtraining.bpp.police.go.th/" target="_blank" style="text-decoration: underline;">กองบังคับการฝึกพิเศษ</a> | <a href="http://www.bpp.go.th" target="_blank" style="text-decoration: underline;">กองบัญชาการตำรวจตระเวนชายแดน</a></p>
+                </div>
+            </div>
+            <div class="footer-disclaimer">
+                <p>ลิขสิทธิ์ &copy; 2025 กองกำกับการ 6 กองบังคับการฝึกพิเศษ กองบัญชาการตำรวจตระเวนชายแดน สงวนไว้ซึ่งสิทธิทั้งหมด</p>
+                <p class="web-standard"><i class="fa-solid fa-shield-halved"></i> การคุ้มครองข้อมูลส่วนบุคคล (Privacy Policy) | ข้อตกลงการใช้งานเว็บไซต์</p>
+            </div>
+            <div class="footer-counter">
+                <span class="counter-label"><i class="fa-solid fa-eye"></i> จำนวนผู้เข้าชมเว็บไซต์สะสม:</span>
+                <span class="counter-num">1,248,391</span> ครั้ง
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- JS Files -->
+    <script src="app.js"></script>
+</body>
+</html>
