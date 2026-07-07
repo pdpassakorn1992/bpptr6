@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>กก.6 บก.กฝ.บช.ตชด. ค่ายรามคำแหงมหาราช | กองบัญชาการตำรวจตระเวนชายแดน</title>
+    <!-- Google Fonts: Sarabun & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Bar for official notices / emergency hotline -->
+    <div class="top-bar">
+        <div class="container top-bar-content" style="justify-content: flex-end;">
+            <div class="top-links">
+                <a href="#contact" onclick="switchTab('contact')"><i class="fa-solid fa-location-dot"></i> แผนที่ กก.6</a>
+                <span class="separator">|</span>
+                <a href="https://specialtraining.bpp.police.go.th/" target="_blank"><i class="fa-solid fa-graduation-cap"></i> กองบังคับการฝึกพิเศษ</a>
+                <span class="separator">|</span>
+                <a href="http://www.bpp.go.th" target="_blank"><i class="fa-solid fa-building-columns"></i> กองบัญชาการตำรวจตระเวนชายแดน</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo-area" onclick="switchTab('home')">
+                <img src="assets/logo.png" alt="ตรา กก.6 บก.กฝ.บช.ตชด. ค่ายรามคำแหงมหาราช" class="police-logo">
+                <div class="logo-text">
+                    <span class="thai-name">กก.6 บก.กฝ.บช.ตชด.</span>
+                    <span class="eng-name">ค่ายรามคำแหงมหาราช</span>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="เปิดเมนู">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active" onclick="switchTab('home')"><i class="fa-solid fa-house"></i> หน้าแรก</a>
+                <a href="https://www.facebook.com/Bpptr6" target="_blank" class="nav-link"><i class="fa-brands fa-facebook"></i> ข่าวประชาสัมพันธ์</a>
+                <a href="#commanders" class="nav-link" onclick="switchTab('commanders')"><i class="fa-solid fa-users-gear"></i> ผู้บังคับบัญชา</a>
+                <a href="#contact" class="nav-link" onclick="switchTab('contact')"><i class="fa-solid fa-envelope"></i> ติดต่อเรา</a>
+                <a href="tel:021234567" class="btn-emergency-call"><i class="fa-solid fa-phone"></i> โทรติดต่อ กก.6</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Container (SPA Sections) -->
+    <main>
+        <!-- 1. Home Section -->
+        <section id="home" class="tab-content active">
+            <!-- Royal Mourning Banner -->
+            <div class="mourning-banner-container">
+                <div class="container">
+                    <img src="assets/mourning.png" alt="กราบน้อมส่งเสด็จสู่สวรรคาลัย" class="mourning-banner-img">
+                </div>
+            </div>
+
+            <!-- Trial Balance Section (Premium Card & Button) -->
+            <div class="trial-balance-section" style="background-color: var(--bg-light); padding: 40px 0; text-align: center; border-bottom: 1px solid var(--border-color);">
+                <div class="container">
+                    <div class="trial-balance-card" style="max-width: 600px; margin: 0 auto; padding: 30px; background: linear-gradient(135deg, #1c355e 0%, #0f203c 100%); border-radius: var(--border-radius-lg); box-shadow: var(--shadow-lg); border: 2px solid var(--accent); position: relative; overflow: hidden;">
+                        <!-- Background subtle shield icon decorator -->
+                        <i class="fa-solid fa-shield-halved" style="position: absolute; right: -20px; bottom: -20px; font-size: 150px; color: rgba(255,255,255,0.03); pointer-events: none;"></i>
+                        
+                        <div class="card-content" style="position: relative; z-index: 2;">
+                            <div class="doc-icon" style="display: inline-flex; align-items: center; justify-content: center; width: 60px; height: 60px; border-radius: 50%; background-color: rgba(197, 160, 89, 0.15); border: 1px solid var(--accent); color: var(--accent); font-size: 24px; margin-bottom: 15px;">
+                                <i class="fa-solid fa-file-invoice-dollar"></i>
+                            </div>
+                            <h3 style="font-size: 22px; color: #ffffff; margin-bottom: 10px; font-weight: 600; font-family: 'Sarabun', sans-serif;">ข้อมูลงบทดลอง ประจำปี 2569</h3>
+                            <p style="font-size: 14px; color: #cbd5e1; margin-bottom: 25px; font-weight: 400; max-width: 450px; margin-left: auto; margin-right: auto; line-height: 1.6; font-family: 'Sarabun', sans-serif;">
+                                เอกสารรายงานงบทดลองของหน่วยงาน กองกำกับการ 6 กองบังคับการฝึกพิเศษ ประจำปีงบประมาณ พ.ศ. 2569
+                            </p>
+                            
+                            <a href="https://drive.google.com/drive/u/0/folders/1t_Q_28BltWV-ijiQoeENa8whvXRHrHTT" target="_blank" class="trial-balance-btn" style="display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(90deg, var(--accent) 0%, #d4b26f 100%); color: #1c355e; font-weight: 700; font-size: 16px; padding: 14px 35px; border-radius: 50px; text-decoration: none; box-shadow: 0 4px 15px rgba(197, 160, 89, 0.4); transition: all 0.3s ease; font-family: 'Sarabun', sans-serif;">
+                                <i class="fa-solid fa-folder-open"></i> เข้าสู่ข้อมูลเอกสาร (Google Drive)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Procurement Section -->
+            <section class="section-padding procurement-section" style="background-color: var(--bg-white); border-bottom: 1px solid var(--border-color);">
+                <div class="container" style="max-width: 900px;">
+                    <div class="section-header" style="text-align: center; margin-bottom: 40px;">
+                        <span class="section-tagline" style="font-family: 'Outfit', sans-serif;">Procurement Announcements</span>
+                        <h2 class="section-title" style="font-family: 'Sarabun', sans-serif;">ประกาศจัดซื้อจัดจ้าง</h2>
+                        <div class="title-line" style="margin: 15px auto;"></div>
+                        <p class="section-desc" style="font-family: 'Sarabun', sans-serif;">แผนการจัดซื้อจัดจ้างและเอกสารเผยแพร่ที่เป็นทางการของกองกำกับการ 6 บก.กฝ.บช.ตชด.</p>
+                    </div>
+
+                    <!-- Announcement Card -->
+                    <div class="procurement-card" style="background-color: var(--bg-white); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); box-shadow: var(--shadow-md); padding: 30px; margin-bottom: 30px; transition: all 0.3s ease;">
+                        <div class="procurement-header" style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 15px; border-bottom: 1px solid var(--border-color); padding-bottom: 20px; margin-bottom: 20px;">
+                            <div>
+                                <span class="badge" style="background-color: rgba(220, 38, 38, 0.1); color: #dc2626; padding: 4px 10px; border-radius: 4px; font-size: 12px; font-weight: 700; display: inline-block; margin-bottom: 10px; font-family: 'Sarabun', sans-serif;">
+                                    <i class="fa-solid fa-bullhorn"></i> ล่าสุด
+                                </span>
+                                <h3 style="font-size: 18px; color: var(--primary); font-weight: 600; line-height: 1.5; margin-bottom: 5px; font-family: 'Sarabun', sans-serif;">เผยแพร่แผนการจัดซื้อจัดจ้าง ประจำปีงบประมาณ พ.ศ. 2569</h3>
+                                <p style="font-size: 13px; color: var(--text-muted); font-family: 'Sarabun', sans-serif;"><i class="fa-solid fa-calendar-day"></i> ประกาศ ณ วันที่ 2 กรกฎาคม พ.ศ. 2569</p>
+                            </div>
+                            <div class="procurement-actions" style="display: flex; gap: 10px;">
+                                <a href="assets/procurement_announcement.png" target="_blank" class="btn btn-procure-outline" style="padding: 10px 20px; font-size: 13.5px; border-radius: 50px; display: inline-flex; align-items: center; gap: 8px; text-decoration: none;">
+                                    <i class="fa-solid fa-file-image"></i> ดูใบประกาศ
+                                </a>
+                                <a href="assets/procurement_details.png" target="_blank" class="btn btn-procure-outline" style="padding: 10px 20px; font-size: 13.5px; border-radius: 50px; display: inline-flex; align-items: center; gap: 8px; text-decoration: none;">
+                                    <i class="fa-solid fa-file-lines"></i> ดูรายละเอียดแนบท้าย
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Procurement Table / Details -->
+                        <div class="procurement-details-table" style="overflow-x: auto;">
+                            <table style="width: 100%; border-collapse: collapse; min-width: 650px; font-size: 14px; font-family: 'Sarabun', sans-serif;">
+                                <thead>
+                                    <tr style="background-color: var(--bg-light); border-bottom: 2px solid var(--border-color); text-align: left;">
+                                        <th style="padding: 12px; font-weight: 600; color: var(--primary); width: 80px; text-align: center;">ลำดับ</th>
+                                        <th style="padding: 12px; font-weight: 600; color: var(--primary); width: 160px;">รหัสแผนจัดซื้อจัดจ้าง</th>
+                                        <th style="padding: 12px; font-weight: 600; color: var(--primary);">ชื่อโครงการ</th>
+                                        <th style="padding: 12px; font-weight: 600; color: var(--primary); text-align: right; width: 140px;">งบประมาณ (บาท)</th>
+                                        <th style="padding: 12px; font-weight: 600; color: var(--primary); text-align: center; width: 150px;">คาดว่าจะประกาศ</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="border-bottom: 1px solid var(--border-color); transition: background-color 0.2s ease;">
+                                        <td style="padding: 15px 12px; color: var(--text-dark); text-align: center; font-weight: 600;">1</td>
+                                        <td style="padding: 15px 12px; font-family: monospace; font-size: 13.5px; font-weight: 600; color: var(--primary-light);">P69070001171</td>
+                                        <td style="padding: 15px 12px; color: var(--text-dark); line-height: 1.6; font-weight: 500;">ซื้อวัสดุเครื่องแต่งกายและสิ่งของเครื่องใช้สำหรับนักเรียนนายสิบตำรวจ จำนวน 14 รายการ</td>
+                                        <td style="padding: 15px 12px; text-align: right; font-weight: 700; color: var(--primary); font-size: 14.5px;">694,000.00</td>
+                                        <td style="padding: 15px 12px; text-align: center; color: var(--text-dark); font-weight: 500;">07/2569</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- No Gift Policy Section -->
+            <section class="section-padding no-gift-policy-section" style="background-color: var(--bg-light); border-bottom: 1px solid var(--border-color); text-align: center;">
+                <div class="container" style="max-width: 800px;">
+                    <div class="section-header" style="margin-bottom: 30px;">
+                        <span class="section-tagline" style="font-family: 'Outfit', sans-serif;">Transparency & Integrity</span>
+                        <h2 class="section-title" style="font-family: 'Sarabun', sans-serif;">นโยบาย No Gift Policy</h2>
+                        <div class="title-line" style="margin: 15px auto;"></div>
+                    </div>
+                    
+                    <div class="policy-banner-container" style="max-width: 680px; margin: 0 auto; box-shadow: var(--shadow-lg); border-radius: var(--border-radius-lg); overflow: hidden; border: 1.5px solid var(--border-color); background-color: #ffffff;">
+                        <img src="assets/no_gift_policy.png" alt="นโยบาย No Gift Policy" class="policy-banner-img" style="display: block; width: 100%; height: auto;">
+                    </div>
+                    
+                    <p style="font-size: 15px; color: var(--text-dark); max-width: 600px; margin: 25px auto 0; line-height: 1.7; font-family: 'Sarabun', sans-serif; font-weight: 500;">
+                        กองกำกับการ 6 กองบังคับการฝึกพิเศษ มุ่งมั่นส่งเสริมวัฒนธรรมองค์กรแห่งความโปร่งใส ปฏิเสธการรับและให้ของขวัญรวมถึงของกำนัลทุกชนิดในทุกโอกาส เพื่อหลีกเลี่ยงการกระทำที่อาจส่งผลต่อการตัดสินใจในการปฏิบัติหน้าที่ ยึดถือหลักธรรมาภิบาลและความซื่อสัตย์สุจริตเป็นสำคัญ
+                    </p>
+                </div>
+            </section>
+
+            <!-- Facebook Page Feed Section -->
+            <section class="section-padding facebook-feed-section" style="background-color: var(--bg-white);">
+                <div class="container" style="max-width: 800px; text-align: center;">
+                    <div class="section-header">
+                        <span class="section-tagline">Official Facebook Feed</span>
+                        <h2 class="section-title">ข่าวสารและกิจกรรมทาง Facebook</h2>
+                        <div class="title-line"></div>
+                        <p class="section-desc">ติดตามความเคลื่อนไหว กิจกรรมการฝึกอบรม และข่าวประชาสัมพันธ์ล่าสุดจากเพจ กก.6 บก.กฝ.บช.ตชด. ส่งตรงจาก Facebook</p>
+                    </div>
+                    
+                    <div class="facebook-iframe-container" style="display: flex; justify-content: center; align-items: center; width: 100%; margin: 0 auto;">
+                        <div class="facebook-iframe-wrapper" style="width: 500px; max-width: 100%; box-shadow: var(--shadow-lg); border-radius: var(--border-radius-lg); overflow: hidden; border: 1.5px solid var(--border-color); background-color: #ffffff;">
+                            <iframe 
+                                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FBpptr6&tabs=timeline&width=500&height=800&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
+                                width="500" 
+                                height="800" 
+                                style="border:none; overflow:hidden; display: block; width: 100%; height: 800px;" 
+                                scrolling="no" 
+                                frameborder="0" 
+                                allowfullscreen="true" 
+                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                            </iframe>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 30px;">
+                        <a href="https://www.facebook.com/Bpptr6" target="_blank" class="btn btn-primary" style="background-color: #1877F2; border-color: #1877F2; color: #ffffff; font-weight: 700; border-radius: 50px; padding: 12px 30px; text-decoration: none;">
+                            <i class="fa-brands fa-facebook"></i> เปิดดูข่าวสารเพิ่มเติมบน Facebook
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+
+        </section>
+
+
+        <!-- 3. Commanders Section -->
+        <section id="commanders" class="tab-content section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Leadership</span>
+                    <h2 class="section-title">ทำเนียบผู้บังคับบัญชา</h2>
+                    <div class="title-line"></div>
+                    <p class="section-desc">รายนามผู้บังคับบัญชา กองกำกับการ 6 กองบังคับการฝึกพิเศษ (กก.6 บก.กฝ.บช.ตชด. ค่ายรามคำแหงมหาราช)</p>
+                </div>
+
+                <!-- Org Structure Visual Representation -->
+                <div class="commanders-structure">
+                    <!-- Rank 1: Superintendent -->
+                    <div class="rank-level level-chief">
+                        <div class="commander-card gold-border">
+                            <div class="commander-img-wrapper">
+                                <img src="assets/commander_1.png" alt="ผู้กำกับการ กองกำกับการ 6" class="commander-img">
+                            </div>
+                            <div class="commander-details">
+                                <span class="rank-badge">ผกก.6 บก.กฝ.บช.ตชด.</span>
+                                <h3 class="commander-name">พ.ต.อ. ชัยวรุตม์ พร้อมญาติ</h3>
+                                <p class="commander-position">ผกก.6 บก.กฝ.บช.ตชด.</p>
+                                <div class="commander-contact-info">
+                                    <span><i class="fa-solid fa-phone"></i> ติดต่อผ่านกองอำนวยการ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Connective line -->
+                    <div class="org-line"></div>
+
+                    <!-- Rank 2: Deputies -->
+                    <div class="rank-level level-deputies">
+                        <!-- Deputy 1 -->
+                        <div class="commander-card">
+                            <div class="commander-img-wrapper">
+                                <img src="assets/commander_2.png" alt="รอง ผกก. กก.6" class="commander-img">
+                            </div>
+                            <div class="commander-details">
+                                <span class="rank-badge">รอง ผกก.6 บก.กฝ.บช.ตชด.</span>
+                                <h3 class="commander-name">พ.ต.ท. ปรัชญา กัลป์ธนวงศ์</h3>
+                                <p class="commander-position">รอง ผกก.6 บก.กฝ.บช.ตชด.</p>
+                                <div class="commander-contact-info">
+                                    <span><i class="fa-solid fa-phone"></i> ติดต่อผ่านกองอำนวยการ</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Deputy 2 -->
+                        <div class="commander-card">
+                            <div class="commander-img-wrapper" style="background-color: #f4f6f9; display: flex; align-items: center; justify-content: center; border: 2px dashed #b2bec3;">
+                                <i class="fa-solid fa-user-shield" style="font-size: 40px; color: #b2bec3;"></i>
+                            </div>
+                            <div class="commander-details">
+                                <span class="rank-badge">รอง ผกก.6 บก.กฝ.บช.ตชด.</span>
+                                <h3 class="commander-name">พ.ต.ท. เมธี ถิ่นจอม</h3>
+                                <p class="commander-position">รอง ผกก.6 บก.กฝ.บช.ตชด.</p>
+                                <div class="commander-contact-info">
+                                    <span><i class="fa-solid fa-phone"></i> ติดต่อผ่านกองอำนวยการ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Division Structure List (BPP Focused) [Hidden for now]
+                <div class="division-structure section-padding">
+                    <h3 class="division-title"><i class="fa-solid fa-sitemap"></i> โครงสร้างส่วนราชการภายใน กก.6</h3>
+                    <div class="division-grid">
+                        <div class="division-item">
+                            <div class="division-icon"><i class="fa-solid fa-person-military-pointing"></i></div>
+                            <h4>งานฝึกอบรม (หลักสูตรตำรวจตระเวนชายแดน)</h4>
+                            <p>รับผิดชอบบริหารจัดการ วางแผนหลักสูตรการฝึก ตรวจสอบและประเมินผลการเรียนรู้ของนักเรียนและผู้ฝึกอบรม</p>
+                        </div>
+                        <div class="division-item">
+                            <div class="division-icon"><i class="fa-solid fa-crosshairs"></i></div>
+                            <h4>งานพัฒนาหลักสูตรพิเศษและยุทธวิธี</h4>
+                            <p>ศึกษาวิจัยและถ่ายทอดวิชาการป้องกันและระงับเหตุเฉพาะหน้า ยุทธวิธีพิเศษทางตำรวจและทหาร</p>
+                        </div>
+                        <div class="division-item">
+                            <div class="division-icon"><i class="fa-solid fa-campground"></i></div>
+                            <h4>งานบริการอาคาร สถานที่และยุทโธปกรณ์</h4>
+                            <p>อำนวยความสะดวกด้านที่พัก สนามฝึก อาวุธยุทโธปกรณ์ อุปกรณ์ประกอบการฝึกอบรมทั้งหมด</p>
+                        </div>
+                        <div class="division-item">
+                            <div class="division-icon"><i class="fa-solid fa-folder-open"></i></div>
+                            <h4>งานอำนวยการและสนับสนุนการฝึก</h4>
+                            <p>ดูแลงานเอกสาร งบประมาณสิทธิกำลังพล ระบบไอทีและการประสานความร่วมมือกับภาคเอกชน</p>
+                        </div>
+                    </div>
+                </div>
+                -->
+            </div>
+        </section>
+        
+        <!-- 4. Contact Us Section -->
+        <section id="contact" class="tab-content section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Contact Us</span>
+                    <h2 class="section-title">ช่องทางการติดต่อเรา</h2>
+                    <div class="title-line"></div>
+                    <p class="section-desc">ติดต่อสอบถามข้อมูลการเข้าใช้ศูนย์ฝึก สอบถามเบอร์วิทยากร หรือส่งข้อเสนอแนะถึงผู้บังคับบัญชา</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Facebook Link (Left) -->
+                    <div class="contact-form-container" style="text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 400px; padding: 40px;">
+                        <div class="service-icon" style="font-size: 48px; color: #1877F2; background-color: rgba(24, 119, 242, 0.1); width: 90px; height: 90px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; margin-left: auto; margin-right: auto; transition: var(--transition);">
+                            <i class="fa-brands fa-facebook-messenger"></i>
+                        </div>
+                        <h3 style="font-size: 24px; color: var(--primary); margin-bottom: 15px; display: flex; align-items: center; gap: 10px; justify-content: center;"><i class="fa-solid fa-comments"></i> ส่งข้อความถึงเรา</h3>
+                        <p class="form-desc" style="max-width: 400px; margin-bottom: 30px; line-height: 1.6;">ท่านสามารถติดต่อสอบถามข้อมูล ส่งข้อความขอความช่วยเหลือ หรือส่งข้อเสนอแนะในการฝึกอบรม โดยส่งข้อความตรงถึงแอดมินเพจกองกำกับการ 6 ผ่านทาง Facebook Messenger</p>
+                        <a href="https://m.me/Bpptr6" target="_blank" class="btn btn-primary btn-large" style="background-color: #1877F2; border-color: #1877F2; color: #ffffff; display: inline-flex; width: auto; font-weight: 700; box-shadow: 0 4px 15px rgba(24, 119, 242, 0.3); border-radius: 50px; padding: 14px 35px;">
+                            <i class="fa-brands fa-facebook-messenger" style="font-size: 20px;"></i> ส่งข้อความทาง Messenger
+                        </a>
+                        <p style="font-size: 12px; color: var(--text-muted); margin-top: 20px;"><i class="fa-solid fa-clock"></i> เจ้าหน้าที่แอดมินพร้อมตอบกลับคำถามของท่านโดยเร็วที่สุด</p>
+                    </div>
+
+                    <!-- Contact Details & Map (Right) -->
+                    <div class="contact-details-container">
+                        <!-- Office Details -->
+                        <div class="contact-info-block">
+                            <h3><i class="fa-solid fa-building-user"></i> ข้อมูลกองกำกับการ 6</h3>
+                            <ul class="contact-info-list">
+                                <li>
+                                    <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                    <div class="info-text">
+                                        <strong>ที่ตั้ง:</strong> 
+                                        <span>ค่ายรามคำแหงมหาราช (กฝ.6) ถ.จรดวิถีถ่อง ต.เมืองเก่า อ.เมือง จ.สุโขทัย 64210</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Map -->
+                        <div class="map-container">
+                            <h3><i class="fa-solid fa-map-location-dot"></i> แผนที่การเดินทาง</h3>
+                            <iframe 
+                                title="แผนที่ตั้งกองกำกับการ 6"
+                                src="https://maps.google.com/maps?q=17.0300836,99.6707686&z=15&output=embed" 
+                                width="100%" 
+                                height="250" 
+                                style="border:0; border-radius: 8px;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Area -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <img src="assets/logo.png" alt="ตรา กก.6 บก.กฝ.บช.ตชด. ค่ายรามคำแหงมหาราช" class="footer-logo">
+                <div class="footer-brand-text">
+                    <h4>กก.6 บก.กฝ.บช.ตชด.</h4>
+                    <p><a href="https://specialtraining.bpp.police.go.th/" target="_blank" style="text-decoration: underline;">กองบังคับการฝึกพิเศษ</a> | <a href="http://www.bpp.go.th" target="_blank" style="text-decoration: underline;">กองบัญชาการตำรวจตระเวนชายแดน</a></p>
+                </div>
+            </div>
+            <div class="footer-disclaimer">
+                <p>ลิขสิทธิ์ &copy; 2025 กองกำกับการ 6 กองบังคับการฝึกพิเศษ กองบัญชาการตำรวจตระเวนชายแดน สงวนไว้ซึ่งสิทธิทั้งหมด</p>
+                <p class="web-standard"><i class="fa-solid fa-shield-halved"></i> การคุ้มครองข้อมูลส่วนบุคคล (Privacy Policy) | ข้อตกลงการใช้งานเว็บไซต์</p>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+    <!-- JS Files -->
+    <script src="app.js"></script>
+
+</body>
+</html>
