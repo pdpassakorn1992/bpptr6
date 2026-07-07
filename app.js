@@ -107,3 +107,6 @@ function animateValue(obj) {
 
     requestAnimationFrame(updateCounter);
 }
+
+
+

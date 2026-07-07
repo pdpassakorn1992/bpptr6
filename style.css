@@ -1414,3 +1414,48 @@ input:focus, select:focus, textarea:focus, .form-control:focus {
         height: 120px !important;
     }
 }
+
+/* Trial Balance Premium Button & Card Hover Effects */
+.trial-balance-btn {
+    transition: all 0.3s ease !important;
+}
+.trial-balance-btn:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(197, 160, 89, 0.6) !important;
+    background: linear-gradient(90deg, #d4b26f 0%, var(--accent) 100%) !important;
+}
+.trial-balance-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+.trial-balance-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25) !important;
+}
+
+/* Procurement Custom Outline Buttons */
+.btn-procure-outline {
+    background-color: transparent;
+    border: 1.5px solid var(--primary);
+    color: var(--primary);
+    font-weight: 600;
+    transition: all 0.3s ease !important;
+}
+.btn-procure-outline:hover {
+    background-color: var(--primary) !important;
+    color: var(--bg-white) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 10px rgba(28, 53, 94, 0.2) !important;
+}
+
+/* No Gift Policy Banner Hover Effect */
+.policy-banner-container {
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+.policy-banner-container:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15) !important;
+}
+
+
+
+
