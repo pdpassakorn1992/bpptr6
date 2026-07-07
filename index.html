@@ -372,10 +372,7 @@
                 <p>ลิขสิทธิ์ &copy; 2025 กองกำกับการ 6 กองบังคับการฝึกพิเศษ กองบัญชาการตำรวจตระเวนชายแดน สงวนไว้ซึ่งสิทธิทั้งหมด</p>
                 <p class="web-standard"><i class="fa-solid fa-shield-halved"></i> การคุ้มครองข้อมูลส่วนบุคคล (Privacy Policy) | ข้อตกลงการใช้งานเว็บไซต์</p>
             </div>
-            <div class="footer-counter">
-                <span class="counter-label"><i class="fa-solid fa-eye"></i> จำนวนผู้เข้าชมเว็บไซต์สะสม:</span>
-                <span class="counter-num">1,248,391</span> ครั้ง
-            </div>
+
         </div>
     </footer>
 
@@ -384,44 +381,6 @@
 
     <!-- JS Files -->
     <script src="app.js"></script>
-    <script>
-        // Real-time visitor counter implementation
-        (async function() {
-            const counterElement = document.querySelector('.counter-num');
-            if (!counterElement) return;
 
-            try {
-                // Fetch incremented count from CounterAPI V1
-                const response = await fetch('https://api.counterapi.dev/v1/bpptr6/website-hits/up');
-                if (response.ok) {
-                    const data = await response.json();
-                    const count = data.count;
-                    // Seed with base visitors count (1,248,391)
-                    const actualCount = count + 1248391;
-                    
-                    // Format number with commas
-                    counterElement.textContent = actualCount.toLocaleString('th-TH');
-                    return;
-                }
-            } catch (error) {
-                console.error('Error fetching visitor count from server:', error);
-            }
-
-            // Fallback: local simulated counter if CORS/Network blocks API on file:///
-            try {
-                let localHits = localStorage.getItem('local_hits');
-                if (!localHits) {
-                    localHits = 1248391;
-                }
-                localHits = parseInt(localHits, 10) + 1;
-                localStorage.setItem('local_hits', localHits);
-                counterElement.textContent = localHits.toLocaleString('th-TH');
-            } catch (localError) {
-                console.error('LocalStorage is also blocked or unavailable:', localError);
-                // Last resort: static increment
-                counterElement.textContent = '1,248,392';
-            }
-        })();
-    </script>
 </body>
 </html>
