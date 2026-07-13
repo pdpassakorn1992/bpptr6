@@ -18,7 +18,7 @@
     <div class="top-bar">
         <div class="container top-bar-content" style="justify-content: flex-end;">
             <div class="top-links">
-                <a href="#contact" onclick="switchTab('contact')"><i class="fa-solid fa-location-dot"></i> แผนที่ กก.6</a>
+                <a href="#contact" onclick="switchTab('contact')"><i class="fa-solid fa-location-dot"></i> แผนที่</a>
                 <span class="separator">|</span>
                 <a href="https://specialtraining.bpp.police.go.th/" target="_blank"><i class="fa-solid fa-graduation-cap"></i> กองบังคับการฝึกพิเศษ</a>
                 <span class="separator">|</span>
@@ -99,45 +99,69 @@
                         <p class="section-desc" style="font-family: 'Sarabun', sans-serif;">แผนการจัดซื้อจัดจ้างและเอกสารเผยแพร่ที่เป็นทางการของกองกำกับการ 6 บก.กฝ.บช.ตชด.</p>
                     </div>
 
-                    <!-- Announcement Card -->
-                    <div class="procurement-card" style="background-color: var(--bg-white); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); box-shadow: var(--shadow-md); padding: 30px; margin-bottom: 30px; transition: all 0.3s ease;">
-                        <div class="procurement-header" style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 15px; border-bottom: 1px solid var(--border-color); padding-bottom: 20px; margin-bottom: 20px;">
-                            <div>
-                                <span class="badge" style="background-color: rgba(220, 38, 38, 0.1); color: #dc2626; padding: 4px 10px; border-radius: 4px; font-size: 12px; font-weight: 700; display: inline-block; margin-bottom: 10px; font-family: 'Sarabun', sans-serif;">
-                                    <i class="fa-solid fa-bullhorn"></i> ล่าสุด
-                                </span>
-                                <h3 style="font-size: 18px; color: var(--primary); font-weight: 600; line-height: 1.5; margin-bottom: 5px; font-family: 'Sarabun', sans-serif;">เผยแพร่แผนการจัดซื้อจัดจ้าง ประจำปีงบประมาณ พ.ศ. 2569</h3>
-                                <p style="font-size: 13px; color: var(--text-muted); font-family: 'Sarabun', sans-serif;"><i class="fa-solid fa-calendar-day"></i> ประกาศ ณ วันที่ 2 กรกฎาคม พ.ศ. 2569</p>
-                            </div>
-                            <div class="procurement-actions" style="display: flex; gap: 10px;">
-                                <a href="assets/procurement_announcement.png" target="_blank" class="btn btn-procure-outline" style="padding: 10px 20px; font-size: 13.5px; border-radius: 50px; display: inline-flex; align-items: center; gap: 8px; text-decoration: none;">
-                                    <i class="fa-solid fa-file-image"></i> ดูใบประกาศ
-                                </a>
-                                <a href="assets/procurement_details.png" target="_blank" class="btn btn-procure-outline" style="padding: 10px 20px; font-size: 13.5px; border-radius: 50px; display: inline-flex; align-items: center; gap: 8px; text-decoration: none;">
-                                    <i class="fa-solid fa-file-lines"></i> ดูรายละเอียดแนบท้าย
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Procurement Table / Details -->
+                    <!-- Single Table Container -->
+                    <div style="background-color: var(--bg-white); border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); box-shadow: var(--shadow-md); overflow: hidden;">
                         <div class="procurement-details-table" style="overflow-x: auto;">
-                            <table style="width: 100%; border-collapse: collapse; min-width: 650px; font-size: 14px; font-family: 'Sarabun', sans-serif;">
+                            <table style="width: 100%; border-collapse: collapse; min-width: 750px; font-size: 14px; font-family: 'Sarabun', sans-serif;">
                                 <thead>
-                                    <tr style="background-color: var(--bg-light); border-bottom: 2px solid var(--border-color); text-align: left;">
-                                        <th style="padding: 12px; font-weight: 600; color: var(--primary); width: 80px; text-align: center;">ลำดับ</th>
-                                        <th style="padding: 12px; font-weight: 600; color: var(--primary); width: 160px;">รหัสแผนจัดซื้อจัดจ้าง</th>
-                                        <th style="padding: 12px; font-weight: 600; color: var(--primary);">ชื่อโครงการ</th>
-                                        <th style="padding: 12px; font-weight: 600; color: var(--primary); text-align: right; width: 140px;">งบประมาณ (บาท)</th>
-                                        <th style="padding: 12px; font-weight: 600; color: var(--primary); text-align: center; width: 150px;">คาดว่าจะประกาศ</th>
+                                    <tr style="background-color: var(--primary); border-bottom: 3px solid var(--accent); text-align: left;">
+                                        <th style="padding: 15px 12px; font-weight: 600; color: #ffffff; width: 60px; text-align: center;">ลำดับ</th>
+                                        <th style="padding: 15px 12px; font-weight: 600; color: #ffffff; width: 110px; text-align: center;">วันที่ประกาศ</th>
+                                        <th style="padding: 15px 12px; font-weight: 600; color: #ffffff;">รายการประกาศ / ชื่อโครงการ</th>
+                                        <th style="padding: 15px 12px; font-weight: 600; color: #ffffff; width: 320px; text-align: center;">ดาวน์โหลดเอกสาร</th>
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <!-- Row 1: e-bidding Announcement -->
+                                    <tr style="border-bottom: 1px solid var(--border-color); background-color: rgba(220, 38, 38, 0.01); transition: background-color 0.2s ease;">
+                                        <td style="padding: 18px 12px; color: var(--text-dark); text-align: center; font-weight: 600; vertical-align: middle;">1</td>
+                                        <td style="padding: 18px 12px; color: var(--text-dark); text-align: center; font-weight: 500; vertical-align: middle;">10 ก.ค. 2569</td>
+                                        <td style="padding: 18px 12px; color: var(--text-dark); line-height: 1.6; vertical-align: middle;">
+                                            <span class="badge" style="background-color: rgba(220, 38, 38, 0.1); color: #dc2626; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 700; display: inline-block; margin-bottom: 8px;">
+                                                <i class="fa-solid fa-bullhorn"></i> ประกาศประกวดราคา (e-bidding)
+                                            </span>
+                                            <div style="font-weight: 600; color: var(--primary); margin-bottom: 4px;">ประกวดราคาซื้อวัสดุเครื่องแต่งกายและสิ่งของเครื่องใช้สำหรับนักเรียนนายสิบตำรวจ จำนวน 14 รายการ</div>
+                                            <div style="font-size: 12.5px; color: var(--text-muted); display: flex; gap: 15px; flex-wrap: wrap;">
+                                                <span><strong>เลขที่เอกสาร:</strong> 01/2569</span>
+                                                <span><strong>ราคากลาง:</strong> 694,000.00 บาท</span>
+                                                <span><strong>กำหนดยื่นข้อเสนอ:</strong> 20 ก.ค. 2569 (09:00 - 12:00 น.)</span>
+                                            </div>
+                                        </td>
+                                        <td style="padding: 18px 12px; text-align: center; vertical-align: middle;">
+                                            <div style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;">
+                                                <a href="assets/procurement_bidding_announcement.pdf" target="_blank" class="btn btn-procure-outline" style="padding: 8px 15px; font-size: 12.5px; border-radius: 50px; display: inline-flex; align-items: center; gap: 6px; text-decoration: none;">
+                                                    <i class="fa-solid fa-file-pdf"></i> ใบประกาศซื้อ
+                                                </a>
+                                                <a href="assets/procurement_bidding_docs.pdf" target="_blank" class="btn btn-procure-outline" style="padding: 8px 15px; font-size: 12.5px; border-radius: 50px; display: inline-flex; align-items: center; gap: 6px; text-decoration: none;">
+                                                    <i class="fa-solid fa-file-pdf"></i> เอกสารแนบท้าย
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- Row 2: Plan Announcement -->
                                     <tr style="border-bottom: 1px solid var(--border-color); transition: background-color 0.2s ease;">
-                                        <td style="padding: 15px 12px; color: var(--text-dark); text-align: center; font-weight: 600;">1</td>
-                                        <td style="padding: 15px 12px; font-family: monospace; font-size: 13.5px; font-weight: 600; color: var(--primary-light);">P69070001171</td>
-                                        <td style="padding: 15px 12px; color: var(--text-dark); line-height: 1.6; font-weight: 500;">ซื้อวัสดุเครื่องแต่งกายและสิ่งของเครื่องใช้สำหรับนักเรียนนายสิบตำรวจ จำนวน 14 รายการ</td>
-                                        <td style="padding: 15px 12px; text-align: right; font-weight: 700; color: var(--primary); font-size: 14.5px;">694,000.00</td>
-                                        <td style="padding: 15px 12px; text-align: center; color: var(--text-dark); font-weight: 500;">07/2569</td>
+                                        <td style="padding: 18px 12px; color: var(--text-dark); text-align: center; font-weight: 600; vertical-align: middle;">2</td>
+                                        <td style="padding: 18px 12px; color: var(--text-dark); text-align: center; font-weight: 500; vertical-align: middle;">2 ก.ค. 2569</td>
+                                        <td style="padding: 18px 12px; color: var(--text-dark); line-height: 1.6; vertical-align: middle;">
+                                            <span class="badge" style="background-color: rgba(30, 58, 138, 0.1); color: #1e3a8a; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 700; display: inline-block; margin-bottom: 8px;">
+                                                <i class="fa-solid fa-file-invoice"></i> แผนจัดซื้อจัดจ้าง
+                                            </span>
+                                            <div style="font-weight: 600; color: var(--primary); margin-bottom: 4px;">เผยแพร่แผนการจัดซื้อจัดจ้าง</div>
+                                            <div style="font-size: 12.5px; color: var(--text-muted); display: flex; gap: 15px; flex-wrap: wrap;">
+                                                <span><strong>รหัสแผน:</strong> P69070001171</span>
+                                                <span><strong>งบประมาณโครงการ:</strong> 694,000.00 บาท</span>
+                                            </div>
+                                        </td>
+                                        <td style="padding: 18px 12px; text-align: center; vertical-align: middle;">
+                                            <div style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;">
+                                                <a href="assets/procurement_announcement.png" target="_blank" class="btn btn-procure-outline" style="padding: 8px 15px; font-size: 12.5px; border-radius: 50px; display: inline-flex; align-items: center; gap: 6px; text-decoration: none;">
+                                                    <i class="fa-solid fa-file-image"></i> ใบประกาศแผน
+                                                </a>
+                                                <a href="assets/procurement_details.png" target="_blank" class="btn btn-procure-outline" style="padding: 8px 15px; font-size: 12.5px; border-radius: 50px; display: inline-flex; align-items: center; gap: 6px; text-decoration: none;">
+                                                    <i class="fa-solid fa-file-lines"></i> รายละเอียดแนบท้าย
+                                                </a>
+                                            </div>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -326,7 +350,7 @@
                     <div class="contact-details-container">
                         <!-- Office Details -->
                         <div class="contact-info-block">
-                            <h3><i class="fa-solid fa-building-user"></i> ข้อมูลกองกำกับการ 6</h3>
+                            <h3><i class="fa-solid fa-building-user"></i> กก.6 บก.กฝ.บช.ตชด.</h3>
                             <ul class="contact-info-list">
                                 <li>
                                     <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
